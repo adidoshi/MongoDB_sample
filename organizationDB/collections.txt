@@ -1,0 +1,216 @@
+Database for Zen class programme -
+
+use zenClassDB :
+
+* All collections :-
+
+1. users -
+
+db.createCollection('users')
+
+db.users.insertMany([
+    {
+        name: 'Chris Evans',
+        email: 'chris@outlook.com',
+        password: 'chris@123',
+    },
+        {
+        name: 'Steve Davis',
+        email: 'steve@yahoo.com',
+        password: 'steve@123',
+    },
+        {
+        name: 'John Morris',
+        email: 'john@gmail.com',
+        password: 'john@123',
+    },
+        {
+        name: 'Varun Mathur',
+        email: 'varun@gamil.com',
+        password: 'varun@123',
+    },
+        {
+        name: 'Ashok Chavan',
+        email: 'ashok@gmail.com',
+        password: 'ashok@123',
+    },
+        {
+        name: 'Mike Rans',
+        email: 'mike@outlook.com',
+        password: 'mike@123',
+    }
+])
+
+2. codekatta -
+
+db.createCollection('codekatta')
+
+db.codekatta.insertMany([
+    {
+        solved_problems: 76
+    },
+    {
+        solved_problems: 143
+    },
+    {
+        solved_problems: 251
+    },
+    {
+        solved_problems: 93
+    },
+    {
+        solved_problems: 176
+    },
+    {
+        solved_problems: 231
+    },
+])
+
+3. attendance -
+
+db.createCollection('attendance');
+
+db.attendance.insertMany([
+    {
+        batch_no: 'WE B23',
+        record: 'present'
+    },
+    {
+        batch_no: 'WE B23',
+        record: 'absent'
+    },
+    {
+        batch_no: 'WD B22',
+        record: 'present'
+    },
+    {
+        batch_no: 'WD B22',
+        record: 'absent'
+    },
+    {
+        batch_no: 'WE B21',
+        record: 'present'
+    },
+    {
+        batch_no: 'WE B21',
+        record: 'absent'
+    }
+]);
+
+4. topics -
+
+db.createCollection('topics');
+
+db.topics.insertMany([
+    {
+        date: new Date(2021, 10, 03, 13, 12),
+        topic: 'Javascript'
+    },
+    {
+        date: new Date(2021, 10, 10, 13, 12),
+        topic: 'React'
+    },
+    {
+        date: new Date(2021, 10, 15, 13, 12),
+        topic: 'Node'
+    },
+    {
+        date: new Date(2021, 10, 18, 13, 12),
+        topic: 'Express'
+    },
+    {
+        date: new Date(2021, 10, 24, 13, 12),
+        topic: 'MongoDB'
+    },
+    {
+        date: new Date(2021, 10, 27, 13, 12),
+        topic: 'OAuth'
+    },
+])
+
+5. tasks
+
+db.createCollection('tasks');
+
+db.tasks.insertMany([
+    {
+        date: new Date(2021, 10, 03, 13, 12),
+        task: 'pagination by DOM'
+    },
+    {
+        date: new Date(2021, 10, 10, 13, 12),
+        task: 'food delivery app'
+    },
+    {
+        date: new Date(2021, 10, 15, 13, 12),
+        task: 'URL shortner'
+    },
+    {
+        date: new Date(2021, 10, 18, 13, 12),
+        task: 'forget password backend'
+    },
+    {
+        date: new Date(2021, 10, 24, 13, 12),
+        task: 'hall booking api'
+    },
+    {
+        date: new Date(2021, 10, 27, 13, 12),
+        task: 'react dashboard'
+    },
+])
+
+6. company_drives
+
+db.createCollection('company_drives');
+
+db.company_drives([
+    {
+        company: 'Paypal'
+    },
+    {
+        company: 'Amazon'
+    },
+    {
+        company: 'Flipkart'
+    },
+    {
+        company: 'Razorpay'
+    },
+    {
+        company: 'Amdocs'
+    },
+    {
+        company: 'TechM'
+    }
+]);
+
+7. Mentors
+
+db.createCollection('mentors');
+
+db.mentors.insertMany([
+    {
+        mentor_name: 'Paypal',
+        students_assigned: 25
+    },
+    {
+        mentor_name: 'Paypal',
+        students_assigned: 18
+    },
+    {
+        mentor_name: 'Paypal',
+        students_assigned: 12
+    },
+    {
+        mentor_name: 'Paypal',
+        students_assigned: 10
+    },
+    {
+        mentor_name: 'Paypal',
+        students_assigned: 30
+    },
+    {
+        mentor_name: 'Paypal',
+        students_assigned: 23
+    }
+]);
