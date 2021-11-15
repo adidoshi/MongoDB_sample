@@ -190,27 +190,27 @@ db.createCollection('mentors');
 
 db.mentors.insertMany([
     {
-        mentor_name: 'Paypal',
+        mentor_name: 'Mentor 1',
         students_assigned: 25
     },
     {
-        mentor_name: 'Paypal',
+        mentor_name: 'Mentor 2',
         students_assigned: 18
     },
     {
-        mentor_name: 'Paypal',
+        mentor_name: 'Mentor 3',
         students_assigned: 12
     },
     {
-        mentor_name: 'Paypal',
+        mentor_name: 'Mentor 4',
         students_assigned: 10
     },
     {
-        mentor_name: 'Paypal',
+        mentor_name: 'Mentor 5',
         students_assigned: 30
     },
     {
-        mentor_name: 'Paypal',
+        mentor_name: 'Mentor 6',
         students_assigned: 23
     }
 ]);
